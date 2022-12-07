@@ -64,7 +64,7 @@ The best solution is to achieve absolute security, not relative security, which 
 
 Such as **physically isolating the server**, increasing the difficulty of physically intruding into the server, and triggering the key removal program if physical intrusion is discovered. The system can not only use encryption at the physical level of the disk, but also add encryption at the developers’ side, so that even the server operator and developer master private key ,they can not decrypt data independently. 
 
-What's more, we can use **homomorphic encryption** to consolidate **data security**. **In this way, the data's key can be mastered by yourself, only you can decrypt the sensitive data locally, and in the meanwhile**. Based on **Web3 Wallet**, we can easily establish the encryption account system. But Homomorphic encryption has many issues currently and now it is only an aid in my system to enhance security, and in my vision it is only used within particularly sensitive personal data.
+What's more, we can use **homomorphic encryption** to consolidate **data security**. **In this way, the data's key can be mastered by yourself, only you can decrypt the sensitive data locally, and in the meanwhile**.  But Homomorphic encryption has many issues currently and now it is only an aid in my system to enhance security, and in my vision it is only used within particularly sensitive personal data.
 
 
 But how to verify whether the server adopts the specific security mechanism, if the server operator claims to have adopted the security mechanism in fake. I think it may be necessary to verify the security of the system through live broadcasts, videos, materials, and even field visits by verifiers.
