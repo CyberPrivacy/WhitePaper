@@ -42,29 +42,28 @@ How to build a new generation of system architecture can not only meet the perfo
 
 First, **all code need to be released publicly,any code change can only be deployed after sufficient audit time**. After developers finish code, it need to be published on the Internet for public audit, allowing stakeholders(included users) to review the code. After a fixed deployment interval period and approved by the DAO(application owner) community, the code can finally be deployed to the server.
 
-Second, **we need to invent a special server called “Privacy Server” whose data cannot be obtained by the server operators**. The Privacy servers should be controlled by the third-party and the server operator can only decide whether to start the system, and which DAO community and code to connect to,they can not get any data from the server. After the system starts, it will automatically pull  the voting records on the blockchain, the code, and deploy the latest code.
+Second, **we need to invent a special trusted server cluster called “Privacy Server Cluster” whose data cannot be obtained by the server operators**. The Privacy server cluster will run a specific operation system, and provide a virtual environment for application and the server operator can only decide whether to start the system, and which DAO community and code to connect to the virtual environment, they can not get any data from the server cluster. After the system starts, it will automatically pull the voting records on the blockchain, the code, and deploy the latest code.
 
-Third, **the system needs to support verifiable**, verifying that the currently running code is the specified code, not fake one.
+Third, **the operation system needs to support verifiable**, verifying that the currently running code is the specified code, not fake one.
 
-Fourth, **the connections between the user and privacy server should be encrypted in the network**. The server-side digital certificate used must be able to be generated only on the server-side, and cannot be copied or accessed to prevent data theft in the connections.
+Fourth, **the connections between the user and privacy server cluster should be encrypted in the network**. The server-side digital certificate used must be able to be generated only on the server-side, and cannot be copied or accessed to prevent data theft in the connections.
 
 Fifth, data is owned by users, and all developers should provide **a unified interface specification to allow users to transfer, delete, and authorize data**.
 
-Sixth,**the administrators’ every action should be publicly displayed**. They can get benefit from the servers, but the power is fairly limited. They can only configure system parameters, view statistical information, decide which algorithm is used. Above all, they cannot access the user's private data information.
+Sixth,**the administrators’ every action should be publicly displayed**. They can get benefit from the application, but the power is fairly limited. They can only configure system parameters, view statistical information, decide which algorithm is used. Above all, they cannot access the user's private data information.
 
+Seventh,**server clusters need to distribute form a blockchain**
 <div align=center>
 <img src="https://github.com/CyberPrivacy/WhitePaper/blob/main/code-release-process.png" width="100%" >
 </div>
 
 ## How to make the system operator lose the permission to read system data?
 
-In the existing server technology, to ensure network connections security, **SSL should be generated internally by the server**, and only the server application can decrypt network traffic; in addition, **TPM can be used to handle disk encryption and lock the basic configuration of the system**; there is also **memory encryption technology**, the memory’s data will keep encrypted until CPU,but it is conceivable that the operator can physically disassemble the CPU package, connect the physical circuit, and obtain the CPU data in an intrusive or semi-intrusive way to obtain key.. There are many security technologies in use to prevent physical intrusion, but so far, there are no substantial cryptographic blocking measures.
+In the existing server cluster technology, to ensure network connections security, **SSL should be generated internally by the server**, and only the server application can decrypt network traffic; in addition, **TPM can be used to handle disk encryption and lock the basic configuration of the system**; there is also **memory encryption technology**, the memory’s data will keep encrypted until CPU,but it is conceivable that the operator can physically disassemble the CPU package, connect the physical circuit, and obtain the CPU data in an intrusive or semi-intrusive way to obtain key.. There are many security technologies in use to prevent from attack(, and so on) .
 
-The best solution is to achieve absolute security, not relative security, which is yet to be discovered by genius, but we can also use some compromise solutions to protect user privacy.
+Such as **physically isolating the server**, increasing the difficulty of physically intruding into the server, and triggering the key removal program if physical intrusion is discovered. The system can not only use encryption at the physical level of the disk, but also add encryption at the developers’ side, so that even the server operator and developer master private key ,they can not decrypt data independently. And we can use side-channel random protection to prevent from obtaining some side-channel info.
 
-Such as **physically isolating the server**, increasing the difficulty of physically intruding into the server, and triggering the key removal program if physical intrusion is discovered. The system can not only use encryption at the physical level of the disk, but also add encryption at the developers’ side, so that even the server operator and developer master private key ,they can not decrypt data independently. 
-
-What's more, we can use **homomorphic encryption** to consolidate **data security**. **In this way, the data's key can be mastered by yourself, only you can decrypt the sensitive data locally, and in the meanwhile**.  But Homomorphic encryption has many issues currently and now it is only an aid in my system to enhance security, and in my vision it is only used within particularly sensitive personal data.
+What's more, we can use **homomorphic encryption** to consolidate **data security**. **In this way, the data's key can be mastered by yourself, only you can decrypt the sensitive data locally, and in the meanwhile**.  But Homomorphic encryption has many issues currently and now it is only an aid in my system to enhance security, and in my vision it is only used within particularly sensitive personal data.(If the system runs rightly as I mentioned above, there is no need to use Homomorphic)
 
 
 But how to verify whether the server adopts the specific security mechanism, if the server operator claims to have adopted the security mechanism in fake. I think it may be necessary to verify the security of the system through live broadcasts, videos, materials, and even field visits by verifiers.
@@ -75,13 +74,13 @@ Can we expect a centralized Amazon-like cloud server that deprives operators of 
 
 **We can use docker technology, which can automatically complete the server configuration required by the code**. The server downloads the docker configuration file and code, and the docker automatically builds and deploys the code.
 
-With the increased number of users, the performance of the Privacy Server needs to be increased accordingly. How to enhance the performance of the server, while this server is protected from physical touching? 
+With the increased number of users, the performance of the Privacy Server Cluster needs to be increased accordingly. How to enhance the performance of the server cluster, while this server cluster is protected from physical touching? 
 
 We can imagine two approaches.
 
-First, we can solve it through the management method. If it needs to be expanded, the DAO issues a notification, after a fixed period of time for stakeholders to learn about it, the validator can participate in monitoring the expanded process ,and report any suspicious behavior.
+First, we can solve it through the management method. If it needs to be expanded, the DAO community should public a notification, after a fixed period of time for stakeholders to learn about it, the validator can participate in monitoring the expanded process ,and report any suspicious behavior.
 
-Second, we can solve it through technology. Creating a distributed system will be a good choice.But Obviously, each server in this distributed system should be Privacy Server.
+Second, we can solve it through technology. Creating a distributed system will be a good choice.But Obviously, each server cluster in this distributed system should be Privacy Server Cluster.
 
 ## How to develop code that meets the security requirements?
 
@@ -128,3 +127,8 @@ These are some thoughts about CyberPrivacy, virtually there are too many affairs
 
 If you are interested in this career, we can cooperate.
 
+
+			
+	 	 
+  	
+   
