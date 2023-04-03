@@ -1,4 +1,6 @@
-# [CyberPrivacy Protocol](https://github.com/CyberPrivacy/WhitePaper)  - Some solutions to Web3 privacy data
+# [CyberPrivacy Protocol](https://github.com/CyberPrivacy/WhitePaper)  - Some solutions to Web3 privacy data 
+[![solidity](https://img.shields.io/badge/dynamic/xml?color=brightgreen&label=solidity&query=0.8&url=https%3A%2F%2Fdocs.soliditylang.org%2Fen%2Fv0.8.19%2F)](https://docs.soliditylang.org/en/v0.8.19/)  &emsp;[Chinese Version](https://github.com/CyberPrivacy/WhitePaper/README_CH.md) 
+
 
 In the era of web2, our data is stored on facebook, twitter, google and other large Internet product providers. In order to get the permission to use these products, we need to compromise our **crucial privacy rights**.
 
