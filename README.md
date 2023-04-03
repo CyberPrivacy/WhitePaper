@@ -129,8 +129,11 @@ These are some thoughts about CyberPrivacy, virtually there are too many affairs
 
 If you are interested in this career, we can cooperate.
 
+The core technical difficulty of this technical solution is that the trusted computing server cluster runs automatically and cannot be directly accessed by anyone. This solution requires the joint investment of many talented software engineers. At present, there is no such ability, but even if we cannot build a fully automated trusted server cluster, we can still create an application developer and operation and maintenance Isolation of vendors, forming a structure similar to application vendors and cloud server platform vendors, and then carrying out various management and mechanism checks and balances on cloud server platform vendors can also improve the privacy problems of the traditional Internet to a considerable extent.
 
-			
+Here are some preliminary design ideas:
+Form a DAO community with the DAO protocol of the blockchain, use the proposal as the basis for application upgrades, use the immutability of IPFS files, and use RANCHER+K8S+JENKIS+HARBOR to create an automatically running trusted service cluster and create a preliminary plan.
+When the title of a DAO community proposal begins with Software Update, it is a special function proposal. The special function proposal must use an IPFS address. The proposal must include specific application code, DOCKERFILE image package file, K8S yaml service deployment file, and pipeline template number. When the trusted service cluster detects a new proposal, it will use the pre-defined pipeline template of jenkis to fill in the sensitive information to form a pipeline file, automatically download the code and configuration file, push HARBOR according to the DOCKERFILE packaged image, and trigger K8S to deploy the file according to the YAML service Perform a system update.			
 	 	 
   	
    
